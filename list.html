@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First class</title>
+    <style>
+        p{
+            font-weight: 900;
+        }
+        /* ul{
+            list-style-type: square;
+            border: 1px solid;
+        } */
+        li {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        li:hover{
+            font-weight: 900;
+            color: green; 
+        }
+
+        ul {
+            list-style: none;
+        }
+        
+        li::before {
+            content: "😍";
+            margin-right: 5px;
+        }
+        li::after {
+            content: " End";
+            margin-right: 5px;
+        }
+       .order-list li:nth-child(odd) {
+            background: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <strong>frontend class</strong>
+  <b><p>List</p></b>
+  <p>ordered List</p>
+  <ol class="order-list"> 
+    <li style="border: 1px solid red;">apple</li>
+    <li>banana</li>
+    <li>cherry</li>
+    <li>cherry</li>
+    <li>cdjd</li>
+    <li>dndf</li>
+  </ol>
+  
+  <p>Unordered List</p>
+  <ul>
+    <li>apple</li>
+    <li>banana</li>
+    <li>cherry</li>
+  </ul>
+
+  <p>Defination List</p>
+  <dl>
+    <dt>Html</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>Css</dt>
+    <dd>Cascade Style Sheet</dd>
+
+    <dt>Javascript</dt>
+    <dd>programming language</dd>
+
+  </dl>
+
+  <div style="border: 1px solid blue;">
+    <span style="border:1px solid red;width: 40px;">hello</span>
+    <span style="border:1px solid red;width: 40px;">world</span>
+  </div>
+
+
+</body>
+</html>
